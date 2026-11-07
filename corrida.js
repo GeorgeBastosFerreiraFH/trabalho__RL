@@ -1,5 +1,5 @@
 let input = require('fs').readFileSync('stdin.txt', 'utf8');
-let lines = input.split("\n");
+let lines = input.split("\n").filter(linha => linha.trim() !== "");
 
 //Array criado para armazenar as velocidades
 let velocidades = []
